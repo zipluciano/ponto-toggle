@@ -70,7 +70,9 @@
       async function fetchStatus() {
         const registerStatus = await fetch("http://localhost:3030/check", {
           headers: {
-            Authorization: localStorage.getItem("REGISTER_AUTH_TOKEN")
+            Authorization: localStorage.getItem("REGISTER_AUTH_TOKEN"),
+            Accept: "*/*",
+            Connection: "keep-alive"
           }
         }).then(res => res.json());
         document.getElementById("register-status").innerText = `Register status: ${registerStatus.shouldRegister}`;
