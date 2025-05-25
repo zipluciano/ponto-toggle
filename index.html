@@ -68,7 +68,7 @@
       }
 
       async function fetchStatus() {
-        const registerStatus = await fetch("http://localhost:3030/check", {
+        const registerStatus = await fetch("https://check-ponto-node-docker-768896443744.us-west1.run.app/check", {
           headers: {
             Authorization: localStorage.getItem("REGISTER_AUTH_TOKEN"),
             Accept: "*/*",
@@ -85,7 +85,7 @@
       }
 
       async function handleToggleRegister() {
-        await fetch("http://localhost:3030/register", {
+        await fetch("https://check-ponto-node-docker-768896443744.us-west1.run.app/register", {
           headers: {
             Authorization: localStorage.getItem("REGISTER_AUTH_TOKEN"),
             "Content-Type": "application/json"
