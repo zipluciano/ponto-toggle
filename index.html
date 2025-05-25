@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <div class="container">
+      <form id="auth-token-form" class="auth-token-form-style" name="auth-token-form">
+        <div>
+          <label for="auth-token">Insert auth token</label>
+          <input id="auth-token" type="text" name="auth-token" />
+        </div>
+        <button type="submit">Set token</button>
+      </form>
+      <section id="register-toggle" class="hide">
+        <p id="register-status">Loading...</p>
+        <button id="toggle-button" onclick="handleToggleRegister()" type="button">Toggle</button>
+      </section>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

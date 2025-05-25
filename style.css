@@ -1,0 +1,31 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.auth-token-form-style {
+  display: flex;
+  gap: 4px;
+}
+
+.hide {
+  display: none;
+}
